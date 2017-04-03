@@ -1,0 +1,560 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://casperjs.org"
+
+    >casperjs (v1.1.3)</a>
+</h1>
+<h4>A navigation scripting & testing utility for PhantomJS and SlimerJS</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.casperjs">module casperjs</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">casperjs.</span>events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">casperjs.</span>querystring</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.casperjs.events">module casperjs.events</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.casperjs.events.EventEmitter">
+            function <span class="apidocSignatureSpan">casperjs.events.</span>EventEmitter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.casperjs.querystring">module casperjs.querystring</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.casperjs.querystring.decode">
+            function <span class="apidocSignatureSpan">casperjs.querystring.</span>decode
+            <span class="apidocSignatureSpan">(qs, sep, eq, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.casperjs.querystring.encode">
+            function <span class="apidocSignatureSpan">casperjs.querystring.</span>encode
+            <span class="apidocSignatureSpan">(obj, sep, eq, name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.casperjs.querystring.escape">
+            function <span class="apidocSignatureSpan">casperjs.querystring.</span>escape
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.casperjs.querystring.parse">
+            function <span class="apidocSignatureSpan">casperjs.querystring.</span>parse
+            <span class="apidocSignatureSpan">(qs, sep, eq, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.casperjs.querystring.stringify">
+            function <span class="apidocSignatureSpan">casperjs.querystring.</span>stringify
+            <span class="apidocSignatureSpan">(obj, sep, eq, name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.casperjs.querystring.unescape">
+            function <span class="apidocSignatureSpan">casperjs.querystring.</span>unescape
+            <span class="apidocSignatureSpan">(s, decodeSpaces)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.casperjs.querystring.unescapeBuffer">
+            function <span class="apidocSignatureSpan">casperjs.querystring.</span>unescapeBuffer
+            <span class="apidocSignatureSpan">(s, decodeSpaces)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.casperjs" id="apidoc.module.casperjs">module casperjs</a></h1>
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.casperjs.events" id="apidoc.module.casperjs.events">module casperjs.events</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.casperjs.events.EventEmitter" id="apidoc.element.casperjs.events.EventEmitter">
+        function <span class="apidocSignatureSpan">casperjs.events.</span>EventEmitter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  this._filters = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.casperjs.querystring" id="apidoc.module.casperjs.querystring">module casperjs.querystring</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.casperjs.querystring.decode" id="apidoc.element.casperjs.querystring.decode">
+        function <span class="apidocSignatureSpan">casperjs.querystring.</span>decode
+        <span class="apidocSignatureSpan">(qs, sep, eq, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decode = function (qs, sep, eq, options) {
+  sep = sep || &#x27;&#x26;&#x27;;
+  eq = eq || &#x27;=&#x27;;
+  var obj = {};
+
+  if (typeof qs !== &#x27;string&#x27; || qs.length === 0) {
+    return obj;
+  }
+
+  var regexp = /\+/g;
+  qs = qs.split(sep);
+
+  var maxKeys = 1000;
+  if (options &#x26;&#x26; typeof options.maxKeys === &#x27;number&#x27;) {
+    maxKeys = options.maxKeys;
+  }
+
+  var len = qs.length;
+  // maxKeys &#x3c;= 0 means that we should not limit keys count
+  if (maxKeys &#x3e; 0 &#x26;&#x26; len &#x3e; maxKeys) {
+    len = maxKeys;
+  }
+
+  for (var i = 0; i &#x3c; len; ++i) {
+    var x = qs[i].replace(regexp, &#x27;%20&#x27;),
+        idx = x.indexOf(eq),
+        kstr, vstr, k, v;
+
+    if (idx &#x3e;= 0) {
+      kstr = x.substr(0, idx);
+      vstr = x.substr(idx + 1);
+    } else {
+      kstr = x;
+      vstr = &#x27;&#x27;;
+    }
+
+    try {
+      k = decodeURIComponent(kstr);
+      v = decodeURIComponent(vstr);
+    } catch (e) {
+      k = QueryString.unescape(kstr, true);
+      v = QueryString.unescape(vstr, true);
+    }
+
+    if (!hasOwnProperty(obj, k)) {
+      obj[k] = v;
+    } else if (Array.isArray(obj[k])) {
+      obj[k].push(v);
+    } else {
+      obj[k] = [obj[k], v];
+    }
+  }
+
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.casperjs.querystring.encode" id="apidoc.element.casperjs.querystring.encode">
+        function <span class="apidocSignatureSpan">casperjs.querystring.</span>encode
+        <span class="apidocSignatureSpan">(obj, sep, eq, name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encode = function (obj, sep, eq, name) {
+  sep = sep || &#x27;&#x26;&#x27;;
+  eq = eq || &#x27;=&#x27;;
+  if (obj === null) {
+    obj = undefined;
+  }
+
+  if (typeof obj === &#x27;object&#x27;) {
+    return Object.keys(obj).map(function(k) {
+      var ks = QueryString.escape(stringifyPrimitive(k)) + eq;
+      if (Array.isArray(obj[k])) {
+        return obj[k].map(function(v) {
+          return ks + QueryString.escape(stringifyPrimitive(v));
+        }).join(sep);
+      } else {
+        return ks + QueryString.escape(stringifyPrimitive(obj[k]));
+      }
+    }).join(sep);
+
+  }
+
+  if (!name) return &#x27;&#x27;;
+  return QueryString.escape(stringifyPrimitive(name)) + eq +
+         QueryString.escape(stringifyPrimitive(obj));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.casperjs.querystring.escape" id="apidoc.element.casperjs.querystring.escape">
+        function <span class="apidocSignatureSpan">casperjs.querystring.</span>escape
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">escape = function (str) {
+  return encodeURIComponent(str);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+eq = eq || &#x27;=&#x27;;
+if (obj === null) {
+  obj = undefined;
+}
+
+if (typeof obj === &#x27;object&#x27;) {
+  return Object.keys(obj).map(function(k) {
+    var ks = QueryString.<span class="apidocCodeKeywordSpan">escape</span>(stringifyPrimitive(k)) + eq;
+    if (Array.isArray(obj[k])) {
+      return obj[k].map(function(v) {
+        return ks + QueryString.escape(stringifyPrimitive(v));
+      }).join(sep);
+    } else {
+      return ks + QueryString.escape(stringifyPrimitive(obj[k]));
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.casperjs.querystring.parse" id="apidoc.element.casperjs.querystring.parse">
+        function <span class="apidocSignatureSpan">casperjs.querystring.</span>parse
+        <span class="apidocSignatureSpan">(qs, sep, eq, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (qs, sep, eq, options) {
+  sep = sep || &#x27;&#x26;&#x27;;
+  eq = eq || &#x27;=&#x27;;
+  var obj = {};
+
+  if (typeof qs !== &#x27;string&#x27; || qs.length === 0) {
+    return obj;
+  }
+
+  var regexp = /\+/g;
+  qs = qs.split(sep);
+
+  var maxKeys = 1000;
+  if (options &#x26;&#x26; typeof options.maxKeys === &#x27;number&#x27;) {
+    maxKeys = options.maxKeys;
+  }
+
+  var len = qs.length;
+  // maxKeys &#x3c;= 0 means that we should not limit keys count
+  if (maxKeys &#x3e; 0 &#x26;&#x26; len &#x3e; maxKeys) {
+    len = maxKeys;
+  }
+
+  for (var i = 0; i &#x3c; len; ++i) {
+    var x = qs[i].replace(regexp, &#x27;%20&#x27;),
+        idx = x.indexOf(eq),
+        kstr, vstr, k, v;
+
+    if (idx &#x3e;= 0) {
+      kstr = x.substr(0, idx);
+      vstr = x.substr(idx + 1);
+    } else {
+      kstr = x;
+      vstr = &#x27;&#x27;;
+    }
+
+    try {
+      k = decodeURIComponent(kstr);
+      v = decodeURIComponent(vstr);
+    } catch (e) {
+      k = QueryString.unescape(kstr, true);
+      v = QueryString.unescape(vstr, true);
+    }
+
+    if (!hasOwnProperty(obj, k)) {
+      obj[k] = v;
+    } else if (Array.isArray(obj[k])) {
+      obj[k].push(v);
+    } else {
+      obj[k] = [obj[k], v];
+    }
+  }
+
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.casperjs.querystring.stringify" id="apidoc.element.casperjs.querystring.stringify">
+        function <span class="apidocSignatureSpan">casperjs.querystring.</span>stringify
+        <span class="apidocSignatureSpan">(obj, sep, eq, name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stringify = function (obj, sep, eq, name) {
+  sep = sep || &#x27;&#x26;&#x27;;
+  eq = eq || &#x27;=&#x27;;
+  if (obj === null) {
+    obj = undefined;
+  }
+
+  if (typeof obj === &#x27;object&#x27;) {
+    return Object.keys(obj).map(function(k) {
+      var ks = QueryString.escape(stringifyPrimitive(k)) + eq;
+      if (Array.isArray(obj[k])) {
+        return obj[k].map(function(v) {
+          return ks + QueryString.escape(stringifyPrimitive(v));
+        }).join(sep);
+      } else {
+        return ks + QueryString.escape(stringifyPrimitive(obj[k]));
+      }
+    }).join(sep);
+
+  }
+
+  if (!name) return &#x27;&#x27;;
+  return QueryString.escape(stringifyPrimitive(name)) + eq +
+         QueryString.escape(stringifyPrimitive(obj));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.casperjs.querystring.unescape" id="apidoc.element.casperjs.querystring.unescape">
+        function <span class="apidocSignatureSpan">casperjs.querystring.</span>unescape
+        <span class="apidocSignatureSpan">(s, decodeSpaces)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unescape = function (s, decodeSpaces) {
+  return QueryString.unescapeBuffer(s, decodeSpaces).toString();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  vstr = &#x27;&#x27;;
+}
+
+try {
+  k = decodeURIComponent(kstr);
+  v = decodeURIComponent(vstr);
+} catch (e) {
+  k = QueryString.<span class="apidocCodeKeywordSpan">unescape</span>(kstr, true);
+  v = QueryString.unescape(vstr, true);
+}
+
+if (!hasOwnProperty(obj, k)) {
+  obj[k] = v;
+} else if (Array.isArray(obj[k])) {
+  obj[k].push(v);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.casperjs.querystring.unescapeBuffer" id="apidoc.element.casperjs.querystring.unescapeBuffer">
+        function <span class="apidocSignatureSpan">casperjs.querystring.</span>unescapeBuffer
+        <span class="apidocSignatureSpan">(s, decodeSpaces)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unescapeBuffer = function (s, decodeSpaces) {
+  var out = new Buffer(s.length);
+  var state = &#x27;CHAR&#x27;; // states: CHAR, HEX0, HEX1
+  var n, m, hexchar;
+
+  for (var inIndex = 0, outIndex = 0; inIndex &#x3c;= s.length; inIndex++) {
+    var c = s.charCodeAt(inIndex);
+    switch (state) {
+      case &#x27;CHAR&#x27;:
+        switch (c) {
+          case charCode(&#x27;%&#x27;):
+            n = 0;
+            m = 0;
+            state = &#x27;HEX0&#x27;;
+            break;
+          case charCode(&#x27;+&#x27;):
+            if (decodeSpaces) c = charCode(&#x27; &#x27;);
+            // pass thru
+          default:
+            out[outIndex++] = c;
+            break;
+        }
+        break;
+
+      case &#x27;HEX0&#x27;:
+        state = &#x27;HEX1&#x27;;
+        hexchar = c;
+        if (charCode(&#x27;0&#x27;) &#x3c;= c &#x26;&#x26; c &#x3c;= charCode(&#x27;9&#x27;)) {
+          n = c - charCode(&#x27;0&#x27;);
+        } else if (charCode(&#x27;a&#x27;) &#x3c;= c &#x26;&#x26; c &#x3c;= charCode(&#x27;f&#x27;)) {
+          n = c - charCode(&#x27;a&#x27;) + 10;
+        } else if (charCode(&#x27;A&#x27;) &#x3c;= c &#x26;&#x26; c &#x3c;= charCode(&#x27;F&#x27;)) {
+          n = c - charCode(&#x27;A&#x27;) + 10;
+        } else {
+          out[outIndex++] = charCode(&#x27;%&#x27;);
+          out[outIndex++] = c;
+          state = &#x27;CHAR&#x27;;
+          break;
+        }
+        break;
+
+      case &#x27;HEX1&#x27;:
+        state = &#x27;CHAR&#x27;;
+        if (charCode(&#x27;0&#x27;) &#x3c;= c &#x26;&#x26; c &#x3c;= charCode(&#x27;9&#x27;)) {
+          m = c - charCode(&#x27;0&#x27;);
+        } else if (charCode(&#x27;a&#x27;) &#x3c;= c &#x26;&#x26; c &#x3c;= charCode(&#x27;f&#x27;)) {
+          m = c - charCode(&#x27;a&#x27;) + 10;
+        } else if (charCode(&#x27;A&#x27;) &#x3c;= c &#x26;&#x26; c &#x3c;= charCode(&#x27;F&#x27;)) {
+          m = c - charCode(&#x27;A&#x27;) + 10;
+        } else {
+          out[outIndex++] = charCode(&#x27;%&#x27;);
+          out[outIndex++] = hexchar;
+          out[outIndex++] = c;
+          break;
+        }
+        out[outIndex++] = 16 * n + m;
+        break;
+    }
+  }
+
+  // TODO support returning arbitrary buffers.
+
+  return out.slice(0, outIndex - 1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // TODO support returning arbitrary buffers.
+
+  return out.slice(0, outIndex - 1);
+};
+
+
+QueryString.unescape = function(s, decodeSpaces) {
+  return QueryString.<span class="apidocCodeKeywordSpan">unescapeBuffer</span>(s, decodeSpaces).toString();
+};
+
+
+QueryString.escape = function(str) {
+  return encodeURIComponent(str);
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
