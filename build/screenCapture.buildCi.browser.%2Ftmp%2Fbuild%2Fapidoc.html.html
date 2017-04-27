@@ -245,7 +245,24 @@
 
   return obj;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @return Casper
+ */
+Casper.prototype.download = function download(url, targetPath, method, data) {
+"use strict";
+this.checkStarted();
+var cu = require('clientutils').create(utils.mergeObjects({}, this.options));
+try {
+    fs.write(targetPath, cu.<span class="apidocCodeKeywordSpan">decode</span>(this.base64encode(url, method, data)), 'wb'
+;);
+    this.emit('downloaded.file', targetPath);
+    this.log(f("Downloaded and saved resource in %s", targetPath));
+} catch (e) {
+    this.emit('downloaded.error', url);
+    this.log(f("Error while downloading %s to %s: %s", url, targetPath, e), "error");
+}
+return this;
+...</pre></li>
     </ul>
 
 
@@ -282,7 +299,25 @@
   return QueryString.escape(stringifyPrimitive(name)) + eq +
          QueryString.escape(stringifyPrimitive(obj));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+// http data
+if (settings.data) {
+    if (utils.isObject(settings.data)) { // query object
+        if (settings.headers &amp;&amp; settings.headers["Content-Type"] &amp;&amp; settings.headers["Content
+-Type"].match(/application\/json/)) {
+            settings.data = JSON.stringify(settings.data); // convert object to JSON notation
+        } else {
+            settings.data = qs.<span class="apidocCodeKeywordSpan">encode</span>(settings.data); // escapes all characters except
+ alphabetic, decimal digits and ,-_.!~*'()
+        }
+    } else if (!utils.isString(settings.data)) {
+        throw new CasperError("open(): invalid request settings data value: " + settings.data);
+    }
+}
+// clean location
+location = utils.cleanUrl(location);
+...</pre></li>
     </ul>
 
 
@@ -380,7 +415,23 @@ if (typeof obj === 'object') {
 
   return obj;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return;
+    }
+    pkgContents = fs.read(pkgPath);
+    if (!pkgContents) {
+        return;
+    }
+    try {
+        pkg = JSON.<span class="apidocCodeKeywordSpan">parse</span>(pkgContents);
+    } catch (e) {
+        return;
+    }
+    if (typeof pkg === "object" &amp;&amp; pkg.main) {
+        return fs.absolute(fs.pathJoin(dir, module, pkg.main));
+    }
+}
+...</pre></li>
     </ul>
 
 
@@ -417,7 +468,22 @@ if (typeof obj === 'object') {
   return QueryString.escape(stringifyPrimitive(name)) + eq +
          QueryString.escape(stringifyPrimitive(obj));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      links = this.evaluate(getLinks);
+    });
+
+    casper.run(function() {
+      response.statusCode = 200;
+
+      //sends results as JSON object
+      response.write(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(links, null, null));
+      response.close();
+    });
+  });
+  console.log('Server running at http://' + ip_server+'/');
+
+You can start the server by executing:
+...</pre></li>
     </ul>
 
 
