@@ -1,6 +1,6 @@
 # npmdoc-casperjs
 
-#### api documentation for  [casperjs (v1.1.3)](http://casperjs.org)  [![npm package](https://img.shields.io/npm/v/npmdoc-casperjs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-casperjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-casperjs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-casperjs)
+#### basic api documentation for  [casperjs (v1.1.3)](http://casperjs.org)  [![npm package](https://img.shields.io/npm/v/npmdoc-casperjs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-casperjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-casperjs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-casperjs)
 
 #### A navigation scripting & testing utility for PhantomJS and SlimerJS
 
